@@ -1,0 +1,17 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "npm-check-updates": "^16.1.0",
+    "random-spanish-words": "^2.0.0",
+    "uniq": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}

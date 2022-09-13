@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Juego del ahorcado</title>
+</head>
+<body>
+
+    <fieldset class="Game-Info">
+        <img id="hangman-image">
+        <p id="correct-letters"></p>
+        <p id="wrong-letters"></p>
+        <div class="input-group">
+            <input id="letter-to-insert" type="text" name="text" autocomplete="off" maxlength="1" class="input" required autofocus onkeypress="return check(event)">
+            <label class="user-label">Ingrese una letra</label>
+        </div>
+    </fieldset>
+
+    <br>
+
+    <fieldset class="Attempt-Info">
+        <button id="attempt">
+            Intentar
+        </button>
+        <button id="replay">
+            Jugar de nuevo
+        </button>
+    </fieldset>
+
+    <script src="../js/bundle.js"></script>
+    <script src="../js/replay.js"></script>
+
+</body>
+</html>
