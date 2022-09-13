@@ -11,6 +11,3 @@ function check(e){
     return patron.test(tecla_final);
 }
 
-document.querySelector('#replay').addEventListener('click', () =>{
-    window.location.reload();
-})

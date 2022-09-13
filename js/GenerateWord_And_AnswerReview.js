@@ -21,8 +21,6 @@
       imageShown = "../images/loseImage.png";
       document.getElementById("hangman-image").src = imageShown;
       document.getElementById('letter-to-insert').readOnly = true;
-      /*alert("You lose");
-      window.location.reload()*/
     }
   }
 
@@ -32,8 +30,6 @@
       imageShown = "../images/winImage.png";
       document.getElementById("hangman-image").src = imageShown;
       document.getElementById('letter-to-insert').readOnly = true;
-      //alert("You win")
-      //window.location.reload();
     }
   }
 
@@ -41,12 +37,12 @@
     if(!(wordGenerated.includes(letterWritten))){
       return checkErrors(letterWritten);
     }
-    for (const i in wordGenerated) {
-      if(letterWritten == wordGenerated[i]){
-        hiddenWord = hiddenWord.replaceAt(i*2, letterWritten);
+    [...wordGenerated].forEach((letter, index) => {
+      if(letterWritten == letter){
+        hiddenWord = hiddenWord.replaceAt(index*2, letterWritten);
         letterShowed.innerHTML = hiddenWord.toUpperCase();
       }
-    }
+    })
     checkAccerts();
   }
   
