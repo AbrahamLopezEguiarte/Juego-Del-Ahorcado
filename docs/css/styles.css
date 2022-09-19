@@ -156,15 +156,18 @@ button:after {
   }
 
   #hangman-image{
+    position: absolute;
     top: calc(100%/25);
     width: 48%;
   }
 
   p{
+    position: absolute;
     top: 38%;
   }
 
   #wrong-letters{
+    position: absolute;
     top: 48%;
   }
 
