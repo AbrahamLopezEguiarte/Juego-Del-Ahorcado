@@ -5,9 +5,8 @@ function check(e){
     if (tecla == 8) {
         return true;
     }
-    // En caso de ser otra tecla la compararemos con una expresión regular para saber si es un caracter especial o una mayúscula
+    // En caso de ser otra tecla la compararemos con una expresión regular para saber si es un caracter especial
     patron = /[a-zA-Z]/;
     tecla_final = String.fromCharCode(tecla);
     return patron.test(tecla_final);
 }
-

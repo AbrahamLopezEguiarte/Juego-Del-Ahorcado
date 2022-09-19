@@ -15,9 +15,9 @@ fieldset{
 
 #hangman-image{
   position: absolute;
-  top: 11%;
+  top: calc(100%/10);
   color: #fff;
-  width: 18%;
+  width: 25%;
   filter: invert(71%) sepia(36%) saturate(658%) hue-rotate(179deg) brightness(104%) contrast(90%);
 }
 
@@ -36,8 +36,8 @@ p{
 }
 
 .input-group {
-    position: relative;
-   }
+  position: relative;
+}
    
 .input {
   border: solid 1.5px #9e9e9e;
@@ -121,4 +121,58 @@ button:after {
 
 #replay{
   margin-left: 20px;
+}
+
+@media screen and (max-width:810px){
+  .Game-Info{
+    margin: 40% 0 0 0;
+  }
+
+  #hangman-image{
+    top: calc(100%/20);
+    width: 30%;
+  }
+
+  p{
+    top: 35%;
+  }
+
+  #wrong-letters{
+    top: 48%;
+  }
+
+  #attempt{
+    margin-left: 5px;
+  }
+
+  #replay{
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:380px){
+  .Game-Info{
+    margin: 40% 0 0 0;
+  }
+
+  #hangman-image{
+    top: calc(100%/25);
+    width: 48%;
+  }
+
+  p{
+    top: 38%;
+  }
+
+  #wrong-letters{
+    top: 48%;
+  }
+
+  #attempt{
+    margin-left: 5px;
+  }
+
+  #replay{
+    margin-left: 10px;
+  }
 }

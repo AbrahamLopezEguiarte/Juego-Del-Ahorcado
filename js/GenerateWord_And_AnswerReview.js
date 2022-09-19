@@ -9,6 +9,10 @@
   alert(wordGenerated)
   letterShowed.innerHTML = hiddenWord;
 
+  function showFailMessage(){
+    document.getElementById('hangman-image').src = '../images/loseImage.png';
+  }
+
   function checkErrors(letterWritten){
     let imageShown;
     if(letterWrong.innerHTML.search(letterWritten.toUpperCase()) < 0){
@@ -18,17 +22,14 @@
       document.getElementById("hangman-image").src = imageShown;
     }
     if(errorsCounter == 6){
-      imageShown = "../images/loseImage.png";
-      document.getElementById("hangman-image").src = imageShown;
+      window.setTimeout(showFailMessage, 1500);
       document.getElementById('letter-to-insert').readOnly = true;
     }
   }
 
   function checkAccerts(){
-    let imageShown;
     if(hiddenWord.indexOf('_') < 0){
-      imageShown = "../images/winImage.png";
-      document.getElementById("hangman-image").src = imageShown;
+      document.getElementById("hangman-image").src = '../images/winImage.png';
       document.getElementById('letter-to-insert').readOnly = true;
     }
   }
