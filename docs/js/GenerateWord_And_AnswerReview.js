@@ -6,7 +6,6 @@
   let wordGenerated = randomWords().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   let hiddenWord = wordGenerated.replace(/./g, "_ ");
   let errorsCounter = 0;
-  alert(wordGenerated)
   letterShowed.innerHTML = hiddenWord;
 
   function showFailMessage(){
