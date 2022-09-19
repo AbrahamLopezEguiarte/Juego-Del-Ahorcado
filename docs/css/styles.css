@@ -152,7 +152,6 @@ button:after {
 
 @media screen and (max-width:380px){
   body{
-    position: relative;
     min-height: 100%;
     height: 100%;
   }
@@ -164,17 +163,14 @@ button:after {
   #hangman-image{
     top: calc(100%/25);
     width: 48%;
-    position: fixed;
   }
 
   p{
     top: 38%;
-    position: fixed;
   }
 
   #wrong-letters{
     top: 48%;
-    position: fixed;
   }
 
   #attempt{
