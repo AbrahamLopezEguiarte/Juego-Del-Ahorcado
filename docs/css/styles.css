@@ -151,24 +151,28 @@ button:after {
 }
 
 @media screen and (max-width:380px){
+  body{
+    position: relative;
+  }
+
   .Game-Info{
     margin: 40% 0 0 0;
   }
 
   #hangman-image{
-    position: absolute;
     top: calc(100%/25);
     width: 48%;
+    position: fixed;
   }
 
   p{
-    position: absolute;
     top: 38%;
+    position: fixed;
   }
 
   #wrong-letters{
-    position: absolute;
     top: 48%;
+    position: fixed;
   }
 
   #attempt{
